@@ -82,7 +82,7 @@ namespace HairSalon.Controllers
     [HttpPost]
     public ActionResult ShowSearch(string searchPhrase)
     {
-      List<Client> model = _db.Clients.Where(p => p.Name.ToLower().Contains(searchPhrase.ToLower()) || _db.Clients.Where(p => p.Description.ToLower().Contains(searchPhrase.ToLower()) || p.Stylist.Name.ToLower().Contains(searchPhrase.ToLower())).ToList(); 
+      List<Client> model = _db.Clients.Where(p => p.Name.ToLower().Contains(searchPhrase.ToLower()) || p.Description.ToLower().Contains(searchPhrase.ToLower()) || p.Stylist.Name.ToLower().Contains(searchPhrase.ToLower())).ToList(); 
       return View("Index", model);
     }
   }
