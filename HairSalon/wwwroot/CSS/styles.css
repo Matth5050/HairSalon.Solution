@@ -1,0 +1,77 @@
+div#footer {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  color:rgb(255, 255, 255);
+  background:rgb(247, 105, 58);
+  padding:8px;
+}
+
+/* div#header {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  color:rgb(255, 255, 255);
+  background:rgb(247, 105, 58);
+  padding:8px;
+  font-family: Snell Roundhand, cursive;
+  font-size: 75px;
+} */
+
+h1 {
+  color:rgb(51, 51, 51);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  color: rgb(247, 105, 58);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: rgb(247, 105, 58);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+a:link {
+  color: rgb(31, 107, 124);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(31, 107, 124);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(253, 178, 153);
+  text-decoration: none;
+}
+
+a:active {
+  color: rgb(255, 187, 187);
+  text-decoration: none;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  margin-top: 200px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
+  padding: 35px;
+  border-radius: 10px;
+  border-color: rgb(247, 105, 58);
+  border-style: double;
+  border-width: 10px;
+}
