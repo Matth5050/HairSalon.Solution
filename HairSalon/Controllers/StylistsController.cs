@@ -17,7 +17,7 @@ namespace HairSalon.Controllers
 
     public ActionResult Index()
     {
-      List<Stylist> model = _db.Stylists.ToList();
+      List<Stylist> model = _db.Stylist.ToList();
       return View(model);
     }
 
@@ -29,20 +29,20 @@ namespace HairSalon.Controllers
     [HttpPost]
     public ActionResult Create(Stylist stylist)
     {
-      _db.Stylists.Add(stylist);
+      _db.Stylist.Add(stylist);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
 
     public ActionResult Details(int id)
     {
-      Stylist thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
+      Stylist thisStylist = _db.Stylist.FirstOrDefault(stylist => stylist.StylistId == id);
       return View(thisStylist);
     }
 
     public ActionResult Edit(int id)
     {
-      var thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
+      var thisStylist = _db.Stylist.FirstOrDefault(stylist => stylist.StylistId == id);
       return View(thisStylist);
     }
 
