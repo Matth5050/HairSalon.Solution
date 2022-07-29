@@ -2,15 +2,17 @@
   Layout = "_Layout";
 }
 
-<h1>Welcome to the Salon Manager</h1>
-
 @using HairSalon.Models;
 @model List<HairSalon.Models.Client>;
 
-<p>@Html.ActionLink("Back to list", "Index")</p> 
-
-<p>@Html.ActionLink("Search Stylists and Clients", "ShowSearch", "Client")</p>
-<p>@Html.ActionLink("See all clients ", "Index", "Client")</p>
-<p>@Html.ActionLink("Add new Client", "Create", "Client")</p>
-<p>@Html.ActionLink("See all stylists", "Index", "Stylist")</p>
-<p>@Html.ActionLink("Add new stylist", "Create", "Stylist")</p>
+<div class="container">
+  <h1>Welcome to the Salon Manager</h1>
+  <br>
+  <p>@Html.ActionLink("Search Stylists and Clients", "ShowSearch", "Client")</p>
+  <br>
+  <p>@Html.ActionLink("See all clients ", "Index", "Client")</p>
+  <p>@Html.ActionLink("Add new Client", "Create", "Client")</p>
+  <br>
+  <p>@Html.ActionLink("See all stylists", "Index", "Stylist")</p>
+  <p>@Html.ActionLink("Add new stylist", "Create", "Stylist")</p>
+</div>
